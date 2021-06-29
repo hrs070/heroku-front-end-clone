@@ -1,2 +1,5 @@
 # heroku-front-end-clone
-A front-end-clone of Heroku.com
+
+## Accknowledgement
+
+- Made with the help of Brad Traversy's tutorial video.
