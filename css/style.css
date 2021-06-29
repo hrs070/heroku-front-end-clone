@@ -99,6 +99,10 @@ pre {
   gap: 30px;
 }
 
+.showcase-text {
+  animation: fromLeft 0.5s ease-out;
+  -webkit-animation: fromLeft 0.5s ease-out;
+}
 .showcase-form {
   position: relative;
   top: 100px;
@@ -106,6 +110,8 @@ pre {
   width: 280px;
   padding: 40px;
   z-index: 100;
+  animation: fromRight 0.5s ease-in;
+  -webkit-animation: fromRight 0.5s ease-out;
 }
 
 .showcase-form .form-control {
@@ -140,6 +146,8 @@ pre {
 /* Stats */
 .stats {
   padding-top: 100px;
+  animation: fromBottom 0.5s ease-out;
+  -webkit-animation: fromBottom 0.5s ease-out;
 }
 .stats-heading {
   max-width: 500px;
@@ -244,6 +252,56 @@ pre {
 /* Footer */
 .footer .social a {
   margin: 0 10px;
+}
+
+/* Animations */
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@keyframes fromRight {
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@keyframes fromBottom {
+  0% {
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
 }
 
 /* Tablets and under */
