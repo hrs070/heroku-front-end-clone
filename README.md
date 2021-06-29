@@ -1,5 +1,5 @@
 # heroku-front-end-clone
 
-## Accknowledgement
+## Acknowledgement
 
 - Made with the help of Brad Traversy's tutorial video.
